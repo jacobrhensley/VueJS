@@ -17,6 +17,8 @@
         <div v-bind:title="title">Hover your mouse here!</div>
 
         <button v-on:click="clickedButton">Click Here!</button>
+
+        <input type="text" v-on:keyup.enter="pressedEnter">
     </div>
 </body>
 </html>
@@ -34,6 +36,9 @@
             },
             clickedButton: function() {
                 alert("you clicked the button!");
+            },
+            pressedEnter: function() {
+                alert("you pressed the enter key!");
             }
         }
     });
