@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="app">
-        <h1>{{ message }}</h1>
+        <h1>{{ name.split(' ')[0]}}</h1>
     </div>
 </body>
 </html>
@@ -17,7 +17,8 @@
     new Vue({
         el: '#app',
         data: {
-            message: 'Hello World!'
+            age: 61,
+            name: 'Jacob Hensley'
         }
     });
     </script>
