@@ -11,6 +11,7 @@
         <p>Title: {{ title }}</p>
         <p>Released: {{ released }}</p>
         <p>The movie is {{ released > 2000 ? 'New' : 'Old'}}</p>
+        <div v-bind:title="title">Hover your mouse here!</div>
     </div>
 </body>
 </html>
@@ -23,9 +24,7 @@
             released: 2004
         },
         methods: {
-            getFullName: function() {
-                return `${this.firstName} ${this.lastName}`
-            }
+            
         }
     });
     </script>
