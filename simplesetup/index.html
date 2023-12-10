@@ -15,6 +15,8 @@
         <p>The movie is {{ isMovieOld() }}</p>
          <!-- EXERCISE 3: Bind the movie name to the "title" attribute on the following div element -->
         <div v-bind:title="title">Hover your mouse here!</div>
+
+        <button v-on:click="clickedButton">Click Here!</button>
     </div>
 </body>
 </html>
@@ -29,6 +31,9 @@
         methods: {
             isMovieOld: function() {
                 return this.released > 2000 ? 'New' : 'Old'
+            },
+            clickedButton: function() {
+                alert("you clicked the button!");
             }
         }
     });
