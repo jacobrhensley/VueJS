@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="app">
-        <h1>{{ getFullName() }}</h1>
+        <a v-bind:href="devSite" target="_blank">{{ getFullName() }}</h1>
     </div>
 </body>
 </html>
@@ -18,7 +18,8 @@
         el: '#app',
         data: {
             firstName: 'Jacob',
-            lastName: 'Hensley'
+            lastName: 'Hensley',
+            devSite: 'https://jacobhensley.dev/'
         },
         methods: {
             getFullName: function() {
