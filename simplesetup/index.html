@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="app">
-        <h1>{{ name.split(' ')[0]}}</h1>
+        <h1>{{ getFullName() }}</h1>
     </div>
 </body>
 </html>
@@ -17,8 +17,13 @@
     new Vue({
         el: '#app',
         data: {
-            age: 61,
-            name: 'Jacob Hensley'
+            firstName: 'Jacob',
+            lastName: 'Hensley'
+        },
+        methods: {
+            getFullName: function() {
+                return `${this.firstName} ${this.lastName}`
+            }
         }
     });
     </script>
