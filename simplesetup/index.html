@@ -10,6 +10,7 @@
     <div id="app">
         <p>Title: {{ title }}</p>
         <p>Released: {{ released }}</p>
+        <p>The movie is {{ released > 2000 ? 'New' : 'Old'}}</p>
     </div>
 </body>
 </html>
@@ -19,7 +20,7 @@
         el: '#app',
         data: {
             title: 'Anchorman',
-            released: '2004'
+            released: 2004
         },
         methods: {
             getFullName: function() {
